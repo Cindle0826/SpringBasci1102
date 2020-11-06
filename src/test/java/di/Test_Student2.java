@@ -21,5 +21,11 @@ public class Test_Student2 {
         System.out.println(s5);
         Student s6 = ctx.getBean("s6", Student.class);
         System.out.println(s6);
+        Student s7 = ctx.getBean("s7", Student.class);
+        System.out.println(s7);
+        Student s8 = ctx.getBean("s8", Student.class);
+        System.out.println(s8);
+        Student s9 = ctx.getBean("s9", Student.class);
+        System.out.println(s9);
     }
 }
