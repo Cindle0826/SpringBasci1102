@@ -1,9 +1,25 @@
 package com.mycompany.springbasic1102.di;
 
 public class Student {
-  private String name;
-  private int age;
 
+    private String name;
+    private int age;
+
+    @Override
+    public String toString() {
+        return "Student{" + "name=" + name + ", age=" + age + '}';
+    }
+
+    public Student() {
+    }
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    
+    
     public String getName() {
         return name;
     }
@@ -19,12 +35,13 @@ public class Student {
     public void setAge(int age) {
         this.age = age;
     }
-
-    @Override
-    public String toString() {
-        return "Student{" + "name=" + name + ", age=" + age + '}';
-    }
-  
     
-  
+    public void destory(){
+        
+    }
+
+    public void init(){
+        
+    }
+
 }
