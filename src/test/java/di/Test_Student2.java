@@ -33,10 +33,20 @@ public class Test_Student2 {
         System.out.println(t3);
         Teacher t4 = ctx.getBean("t4",Teacher.class);
         System.out.println(t4);
+        
         Lotto lotto1 = ctx.getBean("lotto",Lotto.class);
-        System.err.println(lotto1);
+        System.out.println("lotto1: " +lotto1);
         Lotto lotto2 = ctx.getBean("lotto",Lotto.class);
-        System.err.println(lotto2);
+        System.out.println("lotto2: "+ lotto2);
+        
+        
+        Lotto lotto3 = ctx.getBean("lotto2",Lotto.class);
+        System.out.println("lotto3: "+lotto3);
+        Lotto lotto4 = ctx.getBean("lotto2",Lotto.class);
+        System.out.println("lotto4: "+lotto4);
+        
+        Lotto lotto5 = ctx.getBean("lotto3",Lotto.class);
+        System.out.println("lotto5: "+lotto5);
         ctx.close();
     }
 }

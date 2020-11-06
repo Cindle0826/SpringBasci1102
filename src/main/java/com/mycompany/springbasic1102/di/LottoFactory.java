@@ -17,7 +17,7 @@ public class LottoFactory implements FactoryBean<Lotto>{
 
     @Override
     public boolean isSingleton() {
-        return false; //如果是true那用的就是同樣的工廠 false則不同
+        return true; //如果是true那用的就是同樣的工廠 false則不同
     }
     
 }
