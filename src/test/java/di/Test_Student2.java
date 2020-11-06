@@ -30,6 +30,8 @@ public class Test_Student2 {
         System.out.println(s9);
         Teacher t3 = ctx.getBean("t3",Teacher.class);
         System.out.println(t3);
+        Teacher t4 = ctx.getBean("t4",Teacher.class);
+        System.out.println(t4);
         ctx.close();
     }
 }
