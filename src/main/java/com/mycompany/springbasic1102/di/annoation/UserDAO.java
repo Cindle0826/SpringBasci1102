@@ -1,5 +1,6 @@
 package com.mycompany.springbasic1102.di.annoation;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
 
@@ -7,6 +8,7 @@ import org.springframework.stereotype.Repository;
 @Scope(value = "singleton")
 public class UserDAO {
     //DAO DataBase Access Object
+    @Autowired
     private Users users;
     
     public Users queryUsers(){
