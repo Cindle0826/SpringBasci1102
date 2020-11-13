@@ -1,6 +1,6 @@
 package com.mycompany.springbasic1102.di.bytype;
 
-public class Car {
+public class Car implements Motor{
     private String name;
     private Integer price;
 
