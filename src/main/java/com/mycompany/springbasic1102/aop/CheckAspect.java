@@ -1,6 +1,5 @@
 package com.mycompany.springbasic1102.aop;
 
-import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -18,7 +17,7 @@ public class CheckAspect {
     public void cut() {}
 
     //環繞通知
-    @Around(value = "cut")
+    @Around(value = "cut()")
     public Object around(ProceedingJoinPoint joinPoint){
         Object result = null;
         
