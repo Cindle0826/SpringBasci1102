@@ -14,7 +14,7 @@ import org.springframework.jdbc.core.RowMapper;
 public class Test1 {
 
     ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("jdbc-config.xml");
-    JdbcTemplate jdbcTemplate = ctx.getBean("jdbcTemplet", JdbcTemplate.class);
+    JdbcTemplate jdbcTemplate = ctx.getBean("jdbcTemplate", JdbcTemplate.class);
 
     @Test
     public void v1() {
